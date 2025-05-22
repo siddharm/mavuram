@@ -1,0 +1,75 @@
+body {
+	width: 100%;
+  margin: auto;
+	background-color:#F3EDE2;
+  text-align: center;
+  cursor: crosshair;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  margin-top: 15%;
+}
+
+
+.header-text {
+  text-align: center;
+  font-family: "Syne Mono", serif; 
+
+}
+
+.manifesto {
+  color: #999;
+	margin: auto;
+	width: 700px;
+  text-align: center;
+	font-family: Didot, serif; 
+}
+
+.syne-mono-regular {
+  font-family: "Syne Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bouncing-ball{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.circle {
+  width:100px;
+  height:100px;
+  background: white;
+  border-radius: 50px;
+  animation: float 4s infinite;
+  position: relative;
+  background:radial-gradient(farthest-corner at 0px 0px, white, #9198e5); 
+}
+
+.shadow {
+  border-radius: 50px;
+  animation: shadow-float 4s infinite;
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: relative;
+
+}
+
+@keyframes float {
+  0%   {top:0px; background-position: 0% 0%;}
+  75%  {top:-100px; background-position: 10% 40%;}
+  100% {top:0px; background-position: 0% 0%;}
+}
+
+@keyframes shadow-float {
+  0% {left:20px; opacity: 1; transform: skew(-1.8rad); rotate: -12deg}
+  75% {left:50px; opacity: 0.2; transform: skew(-1.70rad); rotate: -7deg;} 
+  100% {left:20px; opacity: 1; transform: skew(-1.8rad); rotate: -12deg}
+}

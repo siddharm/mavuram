@@ -1,6 +1,5 @@
 body {
 	width: 100%;
-  margin: auto;
 	background-color:#F3EDE2;
   text-align: center;
   cursor: crosshair;
@@ -22,10 +21,10 @@ header {
 
 .manifesto {
   color: #999;
-	margin: auto;
-	width: 700px;
+	width: 100%; 
   text-align: center;
-	font-family: Didot, serif; 
+  margin: auto;
+  font-family: Didot, serif; 
 }
 
 .syne-mono-regular {
